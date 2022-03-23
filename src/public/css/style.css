@@ -284,6 +284,10 @@ table {
   background: #ff6600;
   color: white; }
 
+.about {
+  /* To Avoid Empty Rulset Warnings Eweee*/
+  margin: 0px; }
+
 .navbar-banner-showcase {
   margin: 0; }
 
