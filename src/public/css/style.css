@@ -120,3 +120,60 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.txt-thin {
+  font-weight: 400; }
+
+.txt-semi-bold {
+  font-weight: 800; }
+
+.txt-bold {
+  font: 1000; }
+
+.txt-sm {
+  font-size: 1.4rem; }
+
+.txt-md {
+  font-size: 1.6rem; }
+
+.txt-lg {
+  font-size: 2rem; }
+
+.txt-underline {
+  text-decoration: underline; }
+
+.grid {
+  display: grid; }
+
+.col-1 {
+  grid-template-columns: repeat(1, 1fr); }
+
+.col-2 {
+  grid-template-columns: repeat(2, 1fr); }
+
+.col-3 {
+  grid-template-columns: repeat(3, 1fr); }
+
+.col-4 {
+  grid-template-columns: repeat(4, 1fr); }
+
+.col-5 {
+  grid-template-columns: repeat(5, 1fr); }
+
+.row {
+  grid-template-rows: minmax(10rem, auto); }
+
+.bg-primary {
+  background-color: #2aedff; }
+
+.bg-secondary {
+  background-color: #679ff1; }
+
+.bg-tertiary {
+  background-color: #065c64; }
+
+.txt-primary {
+  background-color: #61838f; }
+
+.txt-secondary {
+  background-color: #001113; }

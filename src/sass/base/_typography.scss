@@ -1,0 +1,24 @@
+.txt {
+  &-thin {
+    font-weight: 400;
+  }
+  &-semi-bold {
+    font-weight: 800;
+  }
+  &-bold {
+    font: 1000;
+  }
+
+  &-sm {
+    font-size: 1.4rem;
+  }
+  &-md {
+    font-size: 1.6rem;
+  }
+  &-lg {
+    font-size: 2rem;
+  }
+  &-underline {
+    text-decoration: underline;
+  }
+}
