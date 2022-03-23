@@ -1,23 +1,23 @@
-<nav class="navbar">
-    <!-- logo -->
-    <div class="navbar-divider-1">
-        <span class="navbar-logo">
-            <h1 class="navbar-logo--header">Simple-Website</h1>
-            <img class="navbar-logo--image" src="" alt="" srcset="">
-        </span>
-    </div>
-    <!-- Navigation -->
-    <div class="navbar-divider-2">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="http://">Simple Blog</a>
-    </div>
-    <!-- Banner -->
-    <div class="navbar-banner">
-        <div class="navbar-banner-showcase">
-            <img class="navbar-banner-image"  src="/imgs/live.png" alt="" srcset="">
-        </div>
-        <h2 class="navbar-banner-intro"></h2>
-        <span class="navbar-banner-close"></span>
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+
+        <a class="uk-margin-small-left txt-fancy txt-md uk-link-muted" href="/">Simple Website</a>
+
+        <ul class="uk-navbar-item">
+            <li>
+                <a href="/" class="uk-link-muted">
+                    <span class="uk-icon uk-margin-small-left" uk-icon="icon: home"></span>
+                    Home
+                </a>
+                <a href="about" class="uk-link-muted">
+                    <span class="uk-icon uk-margin-small-left" uk-icon="icon: info"></span>
+                    About
+                </a>
+                <a href="blog" class="uk-link-muted">
+                    <span class="uk-icon uk-margin-small-left" uk-icon="icon: pencil"></span>
+                    Blog
+                </a>
+            </li>
+        </ul> 
     </div>
 </nav>

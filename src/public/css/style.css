@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@300&display=swap");
 html,
 body,
 div,
@@ -81,7 +82,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline; }
 
@@ -120,6 +121,9 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.txt-fancy {
+  font-family: 'Encode Sans Condensed', sans-serif; }
 
 .txt-thin {
   font-weight: 400; }
@@ -162,15 +166,6 @@ table {
 
 .row {
   grid-template-rows: minmax(10rem, auto); }
-
-.bg-primary {
-  background-color: #2aedff; }
-
-.bg-secondary {
-  background-color: #679ff1; }
-
-.bg-tertiary {
-  background-color: #065c64; }
 
 .txt-primary {
   background-color: #61838f; }

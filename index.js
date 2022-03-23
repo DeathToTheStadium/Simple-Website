@@ -1,7 +1,7 @@
 `use strict`
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/testdb');
+//mongoose.connect('mongodb://localhost/testdb');
 
 const lua_utility = require('./src/classes/lua-utility.js');
 
