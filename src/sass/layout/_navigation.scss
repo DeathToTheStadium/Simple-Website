@@ -17,23 +17,29 @@
     &-2 {
       display: inline-block;
       padding-top: 1.5rem;
-      padding-left: 0.25rem;
+      padding-left: 0.6rem;
     }
   }
   &-logo {
-    display: inline-block;
-    vertical-align: center;
+    display: inline;
+    vertical-align: bottom;
     &--header {
       margin: 0;
-    }
-    &--image {
+      font-family: "Poppins", sans-serif;
+      color: $_Primary-Color;
     }
   }
   &-link {
     padding: 1.5rem;
+    color: $_Primary-Color;
+    text-decoration: none;
     &:hover {
       background-color: $_Tertiary;
       color: $_Tertiary-Color;
+      text-decoration: none;
+    }
+    &:active {
+      color: red;
     }
   }
 }

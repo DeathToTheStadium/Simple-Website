@@ -6,5 +6,9 @@
   }
   &-list {
     margin-top: 2rem;
+    &-card {
+      border-left: 0.3rem solid $_Primary-Color;
+      padding-left: 0.5rem;
+    }
   }
 }

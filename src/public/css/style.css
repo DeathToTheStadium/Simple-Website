@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap");
+@keyframes emphasize {
+  0% {
+    border-left: 0rem solid #61838f;
+    padding-left: 00rem; }
+  100% {
+    border-left: 0.3rem solid #61838f;
+    padding-left: 0.5rem; } }
+
+.animation {
+  animation: 1s ease-out 0s 1 emphasize; }
+
 html,
 body,
 div,
@@ -122,9 +133,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-* {
-  font-family: "Poppins", sans-serif; }
-
 .txt-thin {
   font-weight: 400; }
 
@@ -153,6 +161,105 @@ table {
     padding: 2.5rem; }
   .topics-list {
     margin-top: 2rem; }
+    .topics-list-card {
+      border-left: 0.3rem solid #61838f;
+      padding-left: 0.5rem; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px; }
+
+.fa:hover {
+  opacity: 0.7; }
+
+.fa-facebook {
+  background: #3b5998;
+  color: white; }
+
+.fa-twitter {
+  background: #55acee;
+  color: white; }
+
+.fa-google {
+  background: #dd4b39;
+  color: white; }
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white; }
+
+.fa-youtube {
+  background: #bb0000;
+  color: white; }
+
+.fa-instagram {
+  background: #125688;
+  color: white; }
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white; }
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+
+.fa-skype {
+  background: #00aff0;
+  color: white; }
+
+.fa-android {
+  background: #a4c639;
+  color: white; }
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white; }
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white; }
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white; }
+
+.fa-vine {
+  background: #00b489;
+  color: white; }
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white; }
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white; }
+
+.fa-flickr {
+  background: #f40083;
+  color: white; }
+
+.fa-yahoo {
+  background: #430297;
+  color: white; }
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white; }
+
+.fa-reddit {
+  background: #ff5700;
+  color: white; }
+
+.fa-rss {
+  background: #ff6600;
+  color: white; }
 
 .navbar-banner-showcase {
   margin: 0; }
@@ -169,19 +276,26 @@ table {
 .navbar-divider-2 {
   display: inline-block;
   padding-top: 1.5rem;
-  padding-left: 0.25rem; }
+  padding-left: 0.6rem; }
 
 .navbar-logo {
-  display: inline-block;
-  vertical-align: center; }
+  display: inline;
+  vertical-align: bottom; }
   .navbar-logo--header {
-    margin: 0; }
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #61838f; }
 
 .navbar-link {
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  color: #61838f;
+  text-decoration: none; }
   .navbar-link:hover {
     background-color: #065c64;
-    color: #ebfcff; }
+    color: #ebfcff;
+    text-decoration: none; }
+  .navbar-link:active {
+    color: red; }
 
 .grid {
   display: grid; }
