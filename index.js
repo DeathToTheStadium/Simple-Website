@@ -42,6 +42,13 @@ app.get('/about',function(req,res){
     })
 })
 
+app.get('/blog',function(req,res){
+    res.render('blog',{
+        header:{
+            title:'About title'
+        }
+    })
+})
 
 app.listen(Variables.port,()=>{
     console.log(`${Variables.message}${Variables.port}`)

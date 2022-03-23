@@ -7,7 +7,7 @@
     "start:nodemon": "nodemon index.js",
     "start:node-sass": "node-sass -w -r src/sass/main.scss src/public/css/style.css"
   },
-  "author": "",
+  "author": "DeathToTheStadium",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",

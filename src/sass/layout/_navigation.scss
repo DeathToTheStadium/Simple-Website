@@ -1,0 +1,39 @@
+.navbar {
+  &-banner {
+    &-showcase {
+      margin: 0;
+    }
+    &-image {
+      object-fit: cover;
+      object-position: top middle;
+      width: 100vw;
+      height: 55vh;
+    }
+  }
+  &-divider {
+    &-1 {
+      float: left;
+    }
+    &-2 {
+      display: inline-block;
+      padding-top: 1.5rem;
+      padding-left: 0.25rem;
+    }
+  }
+  &-logo {
+    display: inline-block;
+    vertical-align: center;
+    &--header {
+      margin: 0;
+    }
+    &--image {
+    }
+  }
+  &-link {
+    padding: 1.5rem;
+    &:hover {
+      background-color: $_Tertiary;
+      color: $_Tertiary-Color;
+    }
+  }
+}

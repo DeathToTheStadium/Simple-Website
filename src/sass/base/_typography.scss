@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
 .txt {
   &-thin {
     font-weight: 400;
@@ -6,7 +10,7 @@
     font-weight: 800;
   }
   &-bold {
-    font: 1000;
+    font-weight: 1000;
   }
 
   &-sm {

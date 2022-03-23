@@ -1,5 +1,16 @@
 .grid {
   display: grid;
+  &-gap {
+    &--sm {
+      grid-gap: 1rem;
+    }
+    &--md {
+      grid-gap: 2rem;
+    }
+    &--lg {
+      grid-gap: 3rem;
+    }
+  }
 }
 .col {
   &-1 {

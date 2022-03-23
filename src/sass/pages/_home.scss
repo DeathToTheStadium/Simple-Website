@@ -14,9 +14,12 @@
 //page Text Color Tags
 .txt {
   &-primary {
-    background-color: $_Primary-Color;
+    color: $_Primary-Color;
   }
   &-secondary {
-    background-color: $_Secondary-Color;
+    color: $_Secondary-Color;
+  }
+  &-tertiary {
+    color: $_Tertiary-Color;
   }
 }
