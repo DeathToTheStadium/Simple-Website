@@ -10,6 +10,11 @@
 .animation {
   animation: 1s ease-out 0s 1 emphasize; }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
 html,
 body,
 div,
@@ -153,6 +158,24 @@ table {
 
 .txt-underline {
   text-decoration: underline; }
+
+.txt-center {
+  text-align: center; }
+
+.txt-poppin {
+  font-family: "poppins", sans-serif; }
+
+.txt-space-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.txt-space-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.txt-space-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 
 .topics {
   padding: 2.5rem; }
@@ -320,6 +343,12 @@ table {
 
 .col-5 {
   grid-template-columns: repeat(5, 1fr); }
+
+.col-split-2 {
+  grid-template-columns: 1fr 2fr 1fr; }
+
+.col-split-3 {
+  grid-template-columns: 1fr 3fr 1fr; }
 
 .row {
   grid-template-rows: minmax(10rem, auto); }

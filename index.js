@@ -27,12 +27,18 @@ app.use(expressLayouts)
 
 
 app.get('/',function(req,res){
+    res.redirect('/home')
+})
+
+
+app.get('/home',function(req,res){
     res.render('index',{
         header:{
             title:'Whoa its kinda'
         }
     })
 })
+
 
 app.get('/about',function(req,res){
     res.render('about',{
