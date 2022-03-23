@@ -34,7 +34,7 @@ app.get('/',function(req,res){
 app.get('/home',function(req,res){
     res.render('index',{
         header:{
-            title:'Whoa its kinda'
+            title:'HOMEPAGE | Simple-Website'
         }
     })
 })
