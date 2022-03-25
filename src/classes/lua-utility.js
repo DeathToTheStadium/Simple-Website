@@ -1,3 +1,4 @@
+'use strict'
  class lua_Utility  {
     print(text){
         return console.log(text)

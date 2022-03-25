@@ -9,12 +9,13 @@ const express = require('express')
 const expressLayouts = require('express-ejs-layouts');
 const path = require('path')
 const app = express()
+const routes = require('./src/loaders/express.loader');
 
 
 
-const util = new lua_utility()
 
-const Variables = {
+
+const variables = {
     port:3000,
     message:'Listening on port :'
 }
@@ -25,38 +26,48 @@ app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname,'./src/public')))
 app.use(expressLayouts)
 
+routes.then(function(routes){
+    console.log(routes,'im in the index file')
+    for (const key in routes) {
+        if (Object.hasOwnProperty.call(routes, key)) {
+            const router = routes[key];
+            console.log(key)
+            app.use(`/${key}`,router)
+        }
+    }
+})
 
 app.get('/',function(req,res){
     res.redirect('/home')
 })
 
 
-app.get('/home',function(req,res){
-    res.render('index',{
-        header:{
-            title:'HOMEPAGE | Simple-Website'
-        }
-    })
-})
+// app.get('/home',function(req,res){
+//     res.render('index',{
+//         header:{
+//             title:'HOMEPAGE | Simple-Website'
+//         }
+//     })
+// })
 
 
-app.get('/about',function(req,res){
-    res.render('about',{
-        header:{
-            title:'About title'
-        }
-    })
-})
+// app.get('/about',function(req,res){
+//     res.render('about',{
+//         header:{
+//             title:'ABOUT | Simple-Website'
+//         }
+//     })
+// })
 
-app.get('/blog',function(req,res){
-    res.render('blog',{
-        header:{
-            title:'About title'
-        }
-    })
-})
+// app.get('/blog',function(req,res){
+//     res.render('blog',{
+//         header:{
+//             title:'BLOG | Simple-Website'
+//         }
+//     })
+// })
 
-app.listen(Variables.port,()=>{
-    console.log(`${Variables.message}${Variables.port}`)
+app.listen(variables.port,()=>{
+    console.log(`${variables.message}${variables.port}`)
 })
 
