@@ -4,27 +4,27 @@
     <div class="blog">
         <h1 class="txt-bold txt-primary txt-lg txt-center">BLOG</h1>
         <hr class="bg-tertiary">
-        <% for (let i=0;i<=6;i++){ %>
+        <% blog.content.forEach(function(content, index, arr){ %>
         <div class="blog-card" style="width: 30%; float: left; margin-right: 1rem;">
             <div class="blog-card-head">
-                <h2 class="blog-card-title">title</h2>
-                <span class="blog-card-date">00/00/00</span>
-                <span class="blog-card-author">john doe</span>
+                <h2 class="blog-card-title"><%= content.title %></h2>
+                <span class="blog-card-date"><%= content.createdAt.toLocaleDateString() %></span>
+                <span class="blog-card-author"><%= content.author %></span>
             </div>
             <div class="blog-card-body">
                 <span class="blog-card-scene">
                     <img class="blog-card-image" src="https://bloximages.newyork1.vip.townnews.com/thepilot.com/content/tncms/assets/v3/editorial/9/c1/9c123462-ac66-11ec-807b-dfbcc3928138/623e056116468.image.jpg?resize=400%2C400" alt="image" style="width:100%;height:200px">
                 </span>
-                <p class="blog-card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, possimus illum? Itaque, consequatur. Expedita aspernatur dolorem, dolores voluptatem placeat quod!
-                </p>
+                <p class="blog-card-description"><%= content.description %></p>
             </div>
             <div class="blog-card-footer" style="clear: both;">
-                <a class="blog-card-action" href="http://">Read-></a>
+                <a class="blog-card-action" href="/blog/article/<%=content.slug%>">Read-></a>
             </div>
         </div>
-         <% } %>
+         <% }) %>
     </div>
     <!-- Spacer -->
     <div>&nbsp;</div>
 </main>
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eum vel odio dolore ad nam aperiam, accusamus rem sit, sequi necessitatibus corrupti officia velit perspiciatis nemo tempore a nisi, laboriosam dicta? Cupiditate omnis repudiandae impedit praesentium cum animi temporibus aperiam.
