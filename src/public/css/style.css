@@ -357,6 +357,86 @@ table {
 .row {
   grid-template-rows: minmax(10rem, auto); }
 
+.form {
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 5rem; }
+  .form-item {
+    padding: 1rem;
+    width: 25rem;
+    margin-top: 1rem;
+    border: 3px solid transparent;
+    outline: none !important;
+    background-color: #ddf2f5;
+    color: #61838f;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ebfcff;
+    font-size: 1.6rem; }
+    .form-item:hover {
+      border: 3px solid lightblue; }
+    .form-item:focus {
+      border: 3px solid #6af5bd; }
+  .form-button {
+    border-radius: 2rem;
+    background-color: #6af5bd;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ebfcff;
+    font-size: 1.6rem; }
+  .form-cancel {
+    border-radius: 2rem;
+    background-color: #f56a8d;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ebfcff;
+    font-size: 1.6rem; }
+
+.cankle {
+  border-top: 4px dotted #445b62;
+  margin-top: 5rem; }
+  .cankle-social {
+    margin-top: .5rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .cankle-links {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    float: left; }
+    .cankle-links-item {
+      color: #61838f; }
+    .cankle-links-spacer {
+      border-right: 2px solid black; }
+  .cankle-copyright {
+    margin-left: auto;
+    margin-right: auto; }
+
+.form {
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 5rem; }
+  .form-item {
+    padding: 1rem;
+    width: 25rem;
+    margin-top: 1rem;
+    border: 3px solid transparent;
+    outline: none !important;
+    background-color: #ddf2f5;
+    color: #61838f;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ebfcff;
+    font-size: 1.6rem; }
+    .form-item:hover {
+      border: 3px solid lightblue; }
+    .form-item:focus {
+      border: 3px solid #6af5bd; }
+  .form-button {
+    border-radius: 2rem;
+    background-color: #6af5bd;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ebfcff;
+    font-size: 1.6rem; }
+  .form-cancel {
+    border-radius: 2rem;
+    background-color: #f56a8d;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ebfcff;
+    font-size: 1.6rem; }
+
 .bg-primary {
   background-color: #e7fdff; }
 

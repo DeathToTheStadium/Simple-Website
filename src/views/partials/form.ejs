@@ -1,0 +1,17 @@
+<main style="clear: both;">
+    <form class="form" action="/blog/create" method="post">
+        <input class="form-item" maxlength="24" type="text" name="title" value="title" id="" required>
+        <br/>
+        <input class="form-item" type="text" name="author" value="author" id="" required>
+        <br/>
+        <input class="form-item" type="text" name="description" value="description" id="" required>
+        <br/>
+        <textarea class="form-item" style="resize: none;" name="body" value="Content Goes here :)" id="" cols="30" rows="10" required></textarea>
+        <br/>
+        <input class="form-item form-button" type="submit"  value="Create Article">
+        <br/>
+        <input class="form-item form-cancel" type="button" onclick="window.location.href='/blog'" value="Cancel">
+    </form>
+</main>
+
+

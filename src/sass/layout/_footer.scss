@@ -1,0 +1,26 @@
+.cankle {
+   border-top: 4px dotted rgb(68, 91, 98);
+   margin-top: 5rem;
+    &-social {
+        margin-top: .5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-links {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem;
+        
+        float: left;
+        &-item {
+            color: $_Primary-Color;
+        }
+        &-spacer{
+            border-right: 2px solid black;
+        }
+    }
+    &-copyright {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

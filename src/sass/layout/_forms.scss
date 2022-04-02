@@ -1,0 +1,35 @@
+.form {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 5rem;
+    &-item {
+        padding: 1rem;
+        width: 25rem;
+        margin-top: 1rem;
+        border: 3px solid transparent;
+        outline: none !important;
+        background-color: rgb(221, 242, 245);
+        color: $_Primary-Color;
+        text-shadow: 0 0 3px #ffffff, 0 0 5px $_Tertiary-Color;
+        font-size: 1.6rem;
+        &:hover {
+            border: 3px solid lightblue;
+        }
+        &:focus {
+            border: 3px solid rgb(106, 245, 189);
+        }
+    }
+    &-button {
+        border-radius: 2rem;
+        background-color: rgb(106, 245, 189);
+        text-shadow: 0 0 3px #ffffff, 0 0 5px $_Tertiary-Color;
+        font-size: 1.6rem;
+    }
+    &-cancel {
+            border-radius: 2rem;
+            background-color: rgb(245, 106, 141);
+            text-shadow: 0 0 3px #ffffff, 0 0 5px $_Tertiary-Color;
+            font-size: 1.6rem;
+    }
+}

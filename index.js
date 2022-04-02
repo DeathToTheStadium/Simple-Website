@@ -35,11 +35,19 @@ routes.then(function(routes){
             app.use(`/${key}`,router)
         }
     }
+    // Load in our 404 page after every router has loaded
+    app.use('*',function(req,res,next){
+        res.status(404).render('404.ejs',{
+            header:{title:'404 Error Page | Simple Website'}
+        })
+        next()
+    })
 })
 
 app.get('/',function(req,res){
     res.redirect('/home')
 })
+
 
 
 // app.get('/home',function(req,res){
