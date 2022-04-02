@@ -1,7 +1,17 @@
+const res = require('express/lib/response')
 const monogoose = require('mongoose')
 const Schema = require('../models/article')
 
-let createarticle = async function(req,res){
+
+
+let createArticle = async function(req,res){
+    res.render('./partials/form.ejs',{
+        header:{
+            title:' FORM | Simple-Website'
+        }
+    })
+}
+let saveArticle = async function(){
     console.log(req.body)
     try {
         let article = new Schema({
@@ -13,18 +23,16 @@ let createarticle = async function(req,res){
             body:req.body.body
         })
         await article.save()
+        res.redirect(`/article/${article.slug}`)
     } catch (error) {
         console.log('oops Something went wrong')
+        res.status(500).render('500.ejs')
     }
-    res.redirect('/')
+    
 }
+let findArticle = async function() {}
+let updateArticle = async function() {}
 
-let articleform = async function(req,res){
-    res.render('form.ejs',{
-        header:{
-            title:' FORM | Simple-Website'
-        }
-    })
-}
+let deleteArticle = async function() {}
 
-module.exports = [createarticle]
+module.exports = [createArticle,saveArticle,findArticle,updateArticle,deleteArticle]
