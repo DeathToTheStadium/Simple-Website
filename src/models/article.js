@@ -1,7 +1,11 @@
 'use strict'
-
+const { marked } = require('marked');
 const mongoose = require('mongoose')
 const slugify = require('slugify')
+
+const createDomPurify = require('dompurify')
+const { JSDOM } = require('jsdom')
+const dompurify = createDomPurify(new JSDOM().window)
 const Schema = mongoose.Schema(
     {
         title:{
@@ -34,11 +38,12 @@ const Schema = mongoose.Schema(
         }
     }
 )
-
+console.log()
 Schema.pre('validate',function(next){
     if(this.title) {
         this.slug = slugify(this.title)
     }
+    this.body = dompurify.sanitize(marked(this.body))
     next()
 })
 

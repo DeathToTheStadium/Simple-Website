@@ -437,6 +437,16 @@ table {
     text-shadow: 0 0 3px #ffffff, 0 0 5px #ebfcff;
     font-size: 1.6rem; }
 
+table {
+  border: 2px solid black; }
+  table tr {
+    border: 2px solid black; }
+    table tr:nth-child(even) {
+      background-color: #D6EEEE; }
+    table tr th, table tr td {
+      padding: 1rem;
+      border: 2px solid black; }
+
 .bg-primary {
   background-color: #e7fdff; }
 
@@ -454,3 +464,9 @@ table {
 
 .txt-tertiary {
   color: #ebfcff; }
+
+html {
+  background-color: #e7fdff !important; }
+
+main {
+  clear: both !important; }

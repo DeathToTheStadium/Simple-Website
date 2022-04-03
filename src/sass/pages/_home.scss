@@ -23,3 +23,10 @@
     color: $_Tertiary-Color;
   }
 }
+
+html {
+  background-color: $_Primary !important;
+}
+main{
+  clear: both !important;
+}

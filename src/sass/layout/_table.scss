@@ -1,0 +1,13 @@
+table {
+    border: 2px solid black;
+    tr {
+        border: 2px solid black;
+        &:nth-child(even) {
+            background-color: #D6EEEE;
+          }
+        th , td {
+            padding: 1rem;
+            border: 2px solid black;
+        }
+    }
+}
