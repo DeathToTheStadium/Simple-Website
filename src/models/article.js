@@ -1,8 +1,8 @@
 'use strict'
-const { marked } = require('marked');
+
 const mongoose = require('mongoose')
 const slugify = require('slugify')
-
+const { marked } = require('marked');
 const createDomPurify = require('dompurify')
 const { JSDOM } = require('jsdom')
 const dompurify = createDomPurify(new JSDOM().window)
@@ -32,19 +32,28 @@ const Schema = mongoose.Schema(
             required:true,
             unique:true
         },
+        markdown:{
+            type:String,
+            required:true
+        },
         body:{
             type:String,
             required:true
         }
     }
 )
-console.log()
+
 Schema.pre('validate',function(next){
     if(this.title) {
         this.slug = slugify(this.title)
     }
-    this.body = dompurify.sanitize(marked(this.body))
+    if (this.markdown) {
+        this.body = dompurify.sanitize(marked(this.markdown))
+    } else {
+        this.body = ''
+    }
     next()
 })
+
 
 module.exports = mongoose.model('articles',Schema)

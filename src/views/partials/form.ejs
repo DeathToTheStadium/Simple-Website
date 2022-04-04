@@ -1,16 +1,62 @@
 <form class="form" action="<%=body.form.action%>" method="post">
-    <h1><%=body.form.header %></h1>
-    <input class="form-item" maxlength="24" type="text" name="title" value="<%=body.form.title %>" id="" required>
-    <br/>
-    <input class="form-item" type="text" name="author" value="<%=body.form.author%>" id="" required>
-    <br/>
-    <input class="form-item" type="text" name="description" value="<%=body.form.description %>" id="" required>
-    <br/>
-    <textarea class="form-item" style="resize:vertical; width: 50rem;" name="body"  id="" cols="100" rows="10" required><%=body.form.body %></textarea>
-    <br/>
-    <input class="form-item form-button" type="submit"  value="Create Article">
-    <br/>
-    <input class="form-item form-cancel" type="button" onclick="window.location.href='/'" value="Cancel">
+  <h1><%=body.form.header %></h1>
+  <label for="">TITLE</label>
+  <br />
+  <input
+    class="form-item"
+    maxlength="24"
+    type="text"
+    name="title"
+    value="<%=body.form.title %>"
+    id=""
+    required
+  />
+  <br />
+  <br />
+  <label for="">AUTHOR</label>
+  <br />
+  <input
+    class="form-item"
+    type="text"
+    name="author"
+    value="<%=body.form.author%>"
+    id=""
+    required
+  />
+  <br />
+  <br />
+  <label for="">DESCRIPTION</label>
+  <br />
+  <input
+    class="form-item"
+    type="text"
+    name="description"
+    value="<%=body.form.description %>"
+    id=""
+    required
+  />
+  <br />
+  <br />
+  <label for="">MARKDOWN CONTENT</label>
+  <br />
+  <textarea
+    class="form-item"
+    style="resize: vertical; width: 50rem"
+    name="markdown"
+    id=""
+    cols="100"
+    rows="19"
+    required
+  >
+<%=body.form.markdown %></textarea
+  >
+  <br />
+  <input class="form-item form-button" type="submit" value="Create Article" />
+  <br />
+  <input
+    class="form-item form-cancel"
+    type="button"
+    onclick="window.location.href='/'"
+    value="Cancel"
+  />
 </form>
-
-

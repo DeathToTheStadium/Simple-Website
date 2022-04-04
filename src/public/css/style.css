@@ -15,6 +15,26 @@
   clear: both;
   display: table; }
 
+.pd-1 {
+  padding: 1rem; }
+
+.pd-2 {
+  padding: 2rem; }
+
+.pd-2 {
+  padding: 3rem; }
+
+.link-btn {
+  padding: .5rem;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: .1s ease-in;
+  color: rgba(46, 76, 77, 0.621); }
+  .link-btn:hover {
+    border: 2px solid rgba(46, 76, 77, 0.621);
+    font-weight: bold;
+    color: rgba(46, 76, 77, 0.621); }
+
 html,
 body,
 div,
@@ -440,12 +460,12 @@ table {
 table {
   border: 2px solid black; }
   table tr {
-    border: 2px solid black; }
+    border: 2px solid rgba(137, 237, 240, 0.088); }
     table tr:nth-child(even) {
       background-color: #D6EEEE; }
     table tr th, table tr td {
       padding: 1rem;
-      border: 2px solid black; }
+      border: 2px solid rgba(46, 76, 77, 0.621); }
 
 .bg-primary {
   background-color: #e7fdff; }

@@ -3,3 +3,29 @@
   clear: both;
   display: table;
 }
+
+.pd{
+  &-1 {
+    padding: 1rem;
+  }
+  &-2 {
+    padding: 2rem;
+  }
+  &-2 {
+    padding: 3rem;
+  }
+}
+.link {
+  &-btn {
+    padding: .5rem;
+    text-decoration: none;
+    border:2px solid transparent;
+    transition: .1s ease-in;
+    color: rgba(46, 76, 77, 0.621);
+    &:hover{
+      border:2px solid rgba(46, 76, 77, 0.621);
+      font-weight: bold;
+      color: rgba(46, 76, 77, 0.621);
+    }
+  }
+}

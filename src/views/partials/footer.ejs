@@ -1,36 +1,47 @@
 <footer class="cankle grid col-1">
-    <!-- Socials -->
-    <div class="cankle-social">
-        <!-- Add font awesome icons -->
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-youtube"></a>
-        <a href="#" class="fa fa-tumblr"></a>
+  <!-- Socials -->
+  <div class="cankle-social">
+    <!-- Add font awesome icons -->
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-tumblr"></a>
+  </div>
+  <!-- Site Links -->
+  <div class="cankle-links">
+    <div class="cankle-links cankle-links-spacer">
+      <h5><u> ADMIN</u></h5>
+      <% if (hascookie === true) {%>
+      <a class="cankle-links-item" href="/admin"> goto admin panel </a>
+      <br />
+      <a class="cankle-links-item" href="/admin/logout"> logout </a>
+      <%} else {%>
+      <a class="cankle-links-item" href="/admin/login"> login </a>
+      <%} %>
     </div>
-    <!-- Site Links -->
-    <div class="cankle-links" >
-        <div class="cankle-links cankle-links-spacer">
-            <h5> <u> ADMIN</u></h5>
-            <a class="cankle-links-item" href="/admin/login">Log In</a>
-
-        </div>
-        <div class="cankle-links cankle-links-spacer">
-            <h5><u> CONTACT US</u></h5>
-            <a class="cankle-links-item" id="email" href="#email">JOHNDOE@MYEMAIL.COM</a>
-            <br>
-            <a class="cankle-links-item" id="phone" href="#phone">PHONE: 991-111-111</a>
-            <br>
-            <a class="cankle-links-item" id="location" href="#location">Location: Someplace St 3132</a>
-        </div>
-        <div class="cankle-links">
-            <h5><u> BUSINESS</u>S</h5>
-            <a class="cankle-links-item" href="/tos">Terms Of Service</a>
-            <br>
-            <a class="cankle-links-item" href="/privacy">Privacy Policy</a>
-            <br>
-            <a class="cankle-links-item" href="/admin">Site Map</a>
-        </div>
+    <div class="cankle-links cankle-links-spacer">
+      <h5><u> CONTACT US</u></h5>
+      <a class="cankle-links-item" id="email" href="#email"
+        >JOHNDOE@MYEMAIL.COM</a
+      >
+      <br />
+      <a class="cankle-links-item" id="phone" href="#phone"
+        >PHONE: 991-111-111</a
+      >
+      <br />
+      <a class="cankle-links-item" id="location" href="#location"
+        >Location: Someplace St 3132</a
+      >
     </div>
-    <!-- Copy rights -->
-    <div class="cankle-copyright">&copy;DeathToTheStadium</div>
+    <div class="cankle-links">
+      <h5><u> BUSINESS</u>S</h5>
+      <a class="cankle-links-item" href="/tos">Terms Of Service</a>
+      <br />
+      <a class="cankle-links-item" href="/privacy">Privacy Policy</a>
+      <br />
+      <a class="cankle-links-item" href="/admin">Site Map</a>
+    </div>
+  </div>
+  <!-- Copy rights -->
+  <div class="cankle-copyright">&copy;DeathToTheStadium</div>
 </footer>

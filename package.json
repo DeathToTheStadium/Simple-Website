@@ -10,16 +10,23 @@
   "author": "DeathToTheStadium",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
     "dompurify": "^2.3.6",
     "ejs": "^3.1.6",
     "express": "^4.17.2",
     "express-ejs-layouts": "^2.5.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2",
     "howler": "^2.2.3",
     "jsdom": "^19.0.0",
     "marked": "^4.0.12",
     "mongoose": "^6.2.7",
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
     "slugify": "^1.6.5"
   }
 }

@@ -1,31 +1,48 @@
-    <!-- Banner -->
+<!-- Banner -->
 <div class="navbar-banner">
-    <div class="navbar-banner-showcase">
-        <img class="navbar-banner-image"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Web_2.0_Map.svg/1200px-Web_2.0_Map.svg.png" alt="" srcset="">
-    </div>
-    <h2 class="navbar-banner-intro"></h2>
-    <span class="navbar-banner-close"></span>
+  <div class="navbar-banner-showcase">
+    <img
+      class="navbar-banner-image"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Web_2.0_Map.svg/1200px-Web_2.0_Map.svg.png"
+      alt=""
+      srcset=""
+    />
+  </div>
+  <h2 class="navbar-banner-intro"></h2>
+  <span class="navbar-banner-close"></span>
 </div>
 
 <main class="topics grid col-1">
-    <!-- Welcome -->
-    <section  class="topics-welcome bg-secondary">
-        <h2 class="txt-bold txt-tertiary txt-md">Welcome To The Simple Website</h2>
-        <p class="txt-thin txt-tertiary txt-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum, architecto omnis facere officiis nostrum?</p>
-    </section>
-    <!-- List -->
-    <section class="topics-list grid grid-gap--sm col-3">
-        <div class="topics-list-card">
-            <h3 class="topics-list-card--Title txt-bold txt-primary txt-md">Exquisite Design</h3>
-            <p class="topics-list-card--Description txt-thin txt-secondary txt-md">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, recusandae. Eum labore quis neque!</p>
-        </div>
-        <div class="topics-list-card">
-            <h3 class="topics-list-card--Title txt-bold txt-primary txt-md">Great Harmony</h3>
-            <p class="topics-list-card--Description txt-thin txt-secondary txt-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatibus deleniti iste assumenda quae.</p>
-        </div>
-        <div class="topics-list-card">
-            <h3 class="topics-list-card--Title txt-bold txt-primary txt-md">Just Works</h3>
-            <p class="topics-list-card--Description txt-thin txt-secondary txt-md">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis natus numquam temporibus explicabo inventore.</p>
-        </div>
-    </section>
+  <!-- Welcome -->
+  <section class="topics-welcome bg-secondary">
+    <h2 class="txt-bold txt-tertiary txt-md"><%= page.welcome.title %></h2>
+    <p class="txt-thin txt-tertiary txt-sm"><%= page.welcome.description %></p>
+  </section>
+  <!-- List -->
+  <section class="topics-list grid grid-gap--sm col-3">
+    <div class="topics-list-card">
+      <h3 class="topics-list-card--Title txt-bold txt-primary txt-md">
+        <%= page.sections.boxOne.title %>
+      </h3>
+      <p class="topics-list-card--Description txt-thin txt-secondary txt-md">
+        <%= page.sections.boxOne.description %>
+      </p>
+    </div>
+    <div class="topics-list-card">
+      <h3 class="topics-list-card--Title txt-bold txt-primary txt-md">
+        <%= page.sections.boxTwo.title %>
+      </h3>
+      <p class="topics-list-card--Description txt-thin txt-secondary txt-md">
+        <%= page.sections.boxTwo.description %>
+      </p>
+    </div>
+    <div class="topics-list-card">
+      <h3 class="topics-list-card--Title txt-bold txt-primary txt-md">
+        <%= page.sections.boxThree.title %>
+      </h3>
+      <p class="topics-list-card--Description txt-thin txt-secondary txt-md">
+        <%= page.sections.boxThree.description %>
+      </p>
+    </div>
+  </section>
 </main>
